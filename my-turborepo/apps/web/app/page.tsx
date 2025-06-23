@@ -2,6 +2,8 @@ import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
+ import { add } from "@repo/math/add";
+
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
@@ -32,12 +34,9 @@ export default function Home() {
           priority
         />
         <ol>
-          <li>
-            Get started by editing <code>apps/web/app/page.tsx</code>
-          </li>
           <li>Save and see your changes instantly.</li>
+          <li>suma: {add(2,2)}</li>
         </ol>
-
         <div className={styles.ctas}>
           <a
             className={styles.primary}

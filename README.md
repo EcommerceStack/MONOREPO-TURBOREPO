@@ -68,13 +68,16 @@ Especifique la configuración de TypeScript para este paquete agregando un tscon
 @repo/mathAhora está disponible en la webaplicación
 ![alt text](componente.png)
 
-# 6.- Editarturbo.json
+# 6.- Editar turbo.json
 
 Agregue los artefactos de la nueva @repo/mathbiblioteca a la outputstarea builden [nombre del archivo] turbo.json. Esto garantiza que Turborepo almacene en caché sus resultados de compilación, de modo que puedan restaurarse instantáneamente al iniciar las compilaciones.
 
 ![alt text](turbo.png)
 
-# 7.- Correrturbo build
+
+
+# 5 .-Correr npm install
+# 7.- Correr turbo build
 
 Si lo has instalado turboglobalmente , ejecútalo turbo builden tu terminal, en la raíz de tu espacio de trabajo. También puedes ejecutar el buildscript desde package.jsontu gestor de paquetes, que usará turbo run build.
 
