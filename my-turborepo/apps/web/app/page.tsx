@@ -3,6 +3,7 @@ import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
  import { add } from "@repo/math/add";
+ import { rest } from "@repo/math/rest";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -36,6 +37,7 @@ export default function Home() {
         <ol>
           <li>Save and see your changes instantly.</li>
           <li>suma: {add(2,2)}</li>
+           <li>resta: {rest(1,2)}</li>
         </ol>
         <div className={styles.ctas}>
           <a
